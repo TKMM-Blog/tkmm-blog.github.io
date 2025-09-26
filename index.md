@@ -1,5 +1,3 @@
-Here you can say lots of fun things about your site.
+This website is a Blog for the TKMM-Team
 
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+Here, we post updates and detailed progress reports
