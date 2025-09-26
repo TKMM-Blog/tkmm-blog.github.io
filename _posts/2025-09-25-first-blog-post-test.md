@@ -13,7 +13,7 @@ Download from the [official website](https://tkmm.org/downloads/) or use the in-
 - It is now possible to install TKCL mods embedded inside an archive
 - RecipeArray now uses direct index merging (*)
 - English is now used as the default language if the selected target language is not found in the mod files
-- Simplified Chinese and Traditional Chinese translations have been added thanks to <@961536121899192371> 
+- Simplified Chinese and Traditional Chinese translations have been added thanks to carbonatedtea
 
 -# * **Requires changelog rebuild!**
 
