@@ -9,7 +9,7 @@ Download from the [official website](https://tkmm.org/downloads/) or use the in-
 As was voted on Discord a few months prior, this update made many changes to the changelog formats, this means that all your mods will need to be reinstalled in the new version. For TKCL mods, you will need to wait until the authors have updated their mod with the new TKCL format.
 
 <p align="center">
-  <img src="../img/rc1/discordvote.png" alt="Discord Vote" />
+  <img src="https://blog.tkmm.org/img/rc1/discordvote.png" alt="Discord Vote" />
 </p>
 
 # Changes
