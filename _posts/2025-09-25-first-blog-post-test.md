@@ -6,9 +6,11 @@ Download from the [official website](https://tkmm.org/downloads/) or use the in-
 **New icons were added to the game in 1.4.0**, so if a mod contains edits to any of the `__Combined.bntx` files inside the archives from `romfs/UI/LayoutArchive`, those edits will need to be redone using the BNTX files from the latest version. Doing so will ensure your mod's compatibility across all versions from 1.1.0 through 1.4.2.
 
 ### Important note to mod users
-This update made many changes to the changelog formats, and as was voted on Discord a few months prior, this means that all your mods will need to be reinstalled in the new version. For TKCL mods, you will need to wait until the authors have updated their mod with the new TKCL format.
+As was voted on Discord a few months prior, this update made many changes to the changelog formats, this means that all your mods will need to be reinstalled in the new version. For TKCL mods, you will need to wait until the authors have updated their mod with the new TKCL format.
 
-![Discord Vote](/img/rc1/discordvote.png)
+<p align="center">
+  <img src="../img/rc1/discordvote.png" alt="Discord Vote" />
+</p>
 
 # Changes
 - Support added for TotK versions 1.4.0, 1.4.1 and 1.4.2
