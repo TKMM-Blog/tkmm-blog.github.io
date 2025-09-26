@@ -63,9 +63,14 @@ A new mod is dynamically built by TKMM and added to the merge output. It adds an
 
 # Changes
 - Logs folder is changed to `tkmm/Logs` on the SD card
+- The WiFi settings page is not shown as the first step of the setup wizard
 - Initial setup now shows more information about what dumps are missing, if any
 - Fixed a TKMM-NX crash occuring when clicking certain UI elements (missing library dependency)
 - TKMM-NX is now capable of handling OS image self-updates. When updating, it will reboot the Switch completely rather than just close and reopen TKMM
+
+**A new config file was added at** `tkmm/config.ini` **which allows you to customize a few things:**
+- the scale of the application, if you thought the text/images were either too big or too small
+- the volume for the sound card, if sound played when taking a screenshot is either too loud or too quiet
 
 # New menu: Reboot2Config
 A new menu has been added which replaces the power options popup when pressing the Home button.
