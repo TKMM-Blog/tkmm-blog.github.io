@@ -2,8 +2,13 @@
 
 Download from the [official website](https://tkmm.org/downloads/) or use the in-app auto updater.
 
-### Important note to mod authors!
+### Important note to mod authors
 **New icons were added to the game in 1.4.0**, so if a mod contains edits to any of the `__Combined.bntx` files inside the archives from `romfs/UI/LayoutArchive`, those edits will need to be redone using the BNTX files from the latest version. Doing so will ensure your mod's compatibility across all versions from 1.1.0 through 1.4.2.
+
+### Important note to mod users
+This update made many changes to the changelog formats, and as was voted on Discord a few months prior, this means that all your mods will need to be reinstalled in the new version. For TKCL mods, you will need to wait until the authors have updated their mod with the new TKCL format.
+
+![Discord Vote](/img/rc1/discordvote.png)
 
 # Changes
 - Support added for TotK versions 1.4.0, 1.4.1 and 1.4.2
@@ -13,9 +18,9 @@ Download from the [official website](https://tkmm.org/downloads/) or use the in-
 - Internet related errors now occur silently when connectivity is unavailable
 - The setup wizard was improved for clearer step by step guidance
 - TotK Optimizer "Enable" button is now replaced with an ON/OFF toggle
-- Sub-files in SARC archives are now merged with other modded files that have the same canonical path
+- Sub-files in SARC archives are merged with other files that have the same canonical path
 - RecipeArray now uses direct index merging (*)
-- English is now used as the default language if the selected target language is not found in the mod files
+- English is now used as the default language if the selected target language is not found in the mod
 - Simplified Chinese and Traditional Chinese translations have been added thanks to carbonatedtea
 - Added support for Brazilian Portuguese / USpt (only works with TotK 1.4.0 and higher)
 - In manual mode on the setup window, you can now simply input the name of the emulator - making sure it runs in the background will help with detecting all folder paths automatically
@@ -29,8 +34,8 @@ Download from the [official website](https://tkmm.org/downloads/) or use the in-
 - Fixed an issue with NAND paths incorrectly detected as invalid
 - Fixed split XCI files being misread as NSP
 - Fixed TotK Optimizer sliders resetting to 100 when reloading the page
-- Fixed errors related to broken json config files (corrupted files cannot be recovered, but they will be reset)
-- Fixed issues with moving mods to the top or bottom of the list
+- Fixed errors due to broken json config files (corrupted files cannot be recovered but will be reset)
+- Fixed issues with moving mods to the top and bottom of the list
 
 # RomfsLite
 Support was added for large mods on Switch firmware 20.0.0+ thanks to the RomfsLite feature from the TotK Optimizer (Ultracam) developped by MaxLastBreath.
@@ -52,7 +57,7 @@ A new mod is dynamically built by TKMM and added to the merge output. It adds an
 
 ![Default Mod](/img/rc1/defaultmod.png)
 
-*This mod is added at the lowest priority, which means that if another mod edits this same text entry, that mod will overwrite it.*
+*This mod is added at the lowest priority, which means that if another mod edits the same text entry, that mod will overwrite it.*
 
 ## TKMM-NX
 
