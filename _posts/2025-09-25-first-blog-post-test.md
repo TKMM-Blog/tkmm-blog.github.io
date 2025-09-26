@@ -48,9 +48,10 @@ If you use TKMM on PC, you need to enable the option in `Settings` > `Merging` a
 To use this feature on emulators, it is required that you change the merge output to this folder in the emulated SD card: `atmosphere\contents\0100f2c0115b6000`
 
 # Default mod
-A new mod is dynamically built by TKMM and added to the merge output. It adds an indicator on the title screen so that you can directly know whether mods are properly installed!
+A new mod is dynamically built by TKMM and added to the merge output. It adds an indicator on the title screen so that you can directly know whether mods are properly installed.
 
 ![Default Mod](/img/rc1/defaultmod.png)
+
 *This mod is added at the lowest priority, which means that if another mod edits this same text entry, that mod will overwrite it.*
 
 ## TKMM-NX
