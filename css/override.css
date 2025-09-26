@@ -1,23 +1,54 @@
+/* Dark Mode Theme */
+:root {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --text-muted: #808080;
+  --border-color: #404040;
+  --accent-color: #4a9eff;
+  --accent-hover: #6bb6ff;
+}
+
+/* Global dark mode styles */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
+  border-color: var(--border-color);
+  background-color: var(--border-color);
 }
 
 /* Post navigation links */
 .post_navi {
   display: flex;
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid var(--border-color);
 }
 
 .post_navi-label {
   font-size: 0.8em;
-  opacity: 0.5;
+  opacity: 0.7;
+  color: var(--text-secondary);
 }
 
 .post_navi .post_navi-item {
   padding: 0 2.2em;
   width: 50%;
   position: relative;
-  color: inherit !important;
+  color: var(--text-primary) !important;
+  transition: color 0.2s ease;
+}
+
+.post_navi .post_navi-item:hover {
+  color: var(--accent-color) !important;
 }
 
 .post_navi .nav_prev {
@@ -41,5 +72,51 @@ hr {
   top: 50%;
   transform: translateY(-50%);
   font-size: 2.5em;
-  opacity: 0.3;
+  opacity: 0.5;
+  color: var(--accent-color);
+  transition: opacity 0.2s ease;
+}
+
+.post_navi .post_navi-item:hover .post_navi-arrow {
+  opacity: 0.8;
+}
+
+/* Additional dark mode enhancements */
+a {
+  color: var(--accent-color);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+/* Code blocks and pre elements */
+pre, code {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--accent-color);
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+/* Tables */
+table {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+
+th, td {
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+th {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }

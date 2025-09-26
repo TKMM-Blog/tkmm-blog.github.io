@@ -21,17 +21,15 @@ As was voted on Discord a few months prior, this update made many changes to the
 - The setup wizard was improved for clearer step by step guidance
 - TotK Optimizer "Enable" button is now replaced with an ON/OFF toggle
 - Sub-files in SARC archives are merged with other files that have the same canonical path
-- RecipeArray now uses direct index merging (*)
+- RecipeArray now uses direct index merging
 - English is now used as the default language if the selected target language is not found in the mod
 - Simplified Chinese and Traditional Chinese translations have been added thanks to carbonatedtea
 - Added support for Brazilian Portuguese / USpt (only works with TotK 1.4.0 and higher)
 - In manual mode on the setup window, you can now simply input the name of the emulator - making sure it runs in the background will help with detecting all folder paths automatically
 - Added support for auto-setup with emulators using the .AppImage format on Linux (the file must match the emulator's name, like `Citron.AppImage` for example)
 
-(*) **Requires changelog rebuild!**
-
 # Fixes
-- Resource table values now calculated correctly
+- Resource table entries should now be properly estimated, issues that required using the external RESTBL calculator are now fixed
 - App status updates correctly after merge failures
 - Fixed an issue with NAND paths incorrectly detected as invalid
 - Fixed split XCI files being misread as NSP
@@ -42,7 +40,7 @@ As was voted on Discord a few months prior, this update made many changes to the
 # RomfsLite
 Support was added for large mods on Switch firmware 20.0.0+ thanks to the RomfsLite feature from the TotK Optimizer (Ultracam) developped by MaxLastBreath! This feature bypasses the atmosphere romfs building process which runs out of memory with large mods since firmware 20.0.0.
 
-This is accomplished this by injecting code that directly tells the game to load RomFS files from a specific folder. On top of this, it also allows for hot-swapping mod files while the game is running, which can be extremely useful for mod developers!
+This is accomplished by injecting code that tells the game to directly load RomFS files from a specific folder (basically, `romfs` renamed to `romfslite`). On top of this, it also allows for hot-swapping mod files while the game is running, which can be extremely useful for mod developers (this requires reloading a save after swapping files).
 
 - If you use TKMM-NX, simply enabling the optimizer is enough, this feature will be enabled by default.
 
@@ -61,10 +59,10 @@ A new mod is dynamically built by TKMM and added to the merge output. It adds an
 
 # Changes
 - Logs folder is changed to `tkmm/Logs` on the SD card
-- The WiFi settings page is not shown as the first step of the setup wizard
-- Initial setup now shows more information about what dumps are missing, if any
-- Fixed a TKMM-NX crash occuring when clicking certain UI elements (missing library dependency)
-- TKMM-NX is now capable of handling OS image self-updates. When updating, it will reboot the Switch completely rather than just close and reopen TKMM
+- The WiFi settings page is now shown at the first step of the setup wizard
+- Initial setup now provides more information about what dumps are missing, if any
+- Fixed a crash occuring when clicking certain UI elements (missing library dependency)
+- TKMM-NX is now capable of handling OS image self-updates - when updating, it will reboot the Switch completely rather than just close and reopen TKMM
 
 **A new config file was added at** `tkmm/config.ini` **which allows you to customize a few things:**
 - the scale of the application, if you thought the text/images were either too big or too small
