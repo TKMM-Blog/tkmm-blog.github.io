@@ -38,19 +38,15 @@ This update made many changes to the changelog formats, and as was voted on Disc
 - Fixed issues with moving mods to the top and bottom of the list
 
 # RomfsLite
-Support was added for large mods on Switch firmware 20.0.0+ thanks to the RomfsLite feature from the TotK Optimizer (Ultracam) developped by MaxLastBreath.
+Support was added for large mods on Switch firmware 20.0.0+ thanks to the RomfsLite feature from the TotK Optimizer (Ultracam) developped by MaxLastBreath! This feature bypasses the atmosphere romfs building process which runs out of memory with large mods since firmware 20.0.0.
 
-This feature bypasses the atmosphere romfs building process which runs out of memory with large mods since firmware 20.0.0.
+This is accomplished this by injecting code that directly tells the game to load RomFS files from a specific folder. On top of this, it also allows for hot-swapping mod files while the game is running, which can be extremely useful for mod developers!
 
-This is accomplished this by injecting code that directly tells the game to load RomFS files from a specific folder.
+- If you use TKMM-NX, simply enabling the optimizer is enough, this feature will be enabled by default.
 
-On top of this, it also allows for hot-swapping mod files while the game is running, which can be extremely useful for mod developers!
+- If you use TKMM on PC, you need to enable the option in `Settings` > `Merging` and ensure the optimizer is enabled.
 
-If you use TKMM-NX, simply enabling the optimizer is enough, this feature will be enabled by default.
-
-If you use TKMM on PC, you need to enable the option in `Settings` > `Merging` and ensure the optimizer is enabled.
-
-To use this feature on emulators, it is required that you change the merge output to this folder in the emulated SD card: `atmosphere\contents\0100f2c0115b6000`
+- To use this feature on emulators, it is required that you change the merge output to this folder in the emulated SD card: `atmosphere\contents\0100f2c0115b6000`
 
 # Default mod
 A new mod is dynamically built by TKMM and added to the merge output. It adds an indicator on the title screen so that you can directly know whether mods are properly installed.
@@ -77,7 +73,7 @@ A new menu has been added which replaces the power options popup when pressing t
 
 The R2C menu allows you to directly reboot to your desired boot entry, without needing to go back to Hekate.
 
-![Reboot2Config Menu Demo](/img/rc1/reboot2config.gif)
+![Reboot2Config Menu](/img/rc1/reboot2config.gif)
 
 ## Bug Reporting
 
