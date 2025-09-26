@@ -62,7 +62,7 @@ The R2C menu allows you to directly reboot to your desired boot entry, without n
 
 ![Reboot2Config Menu Demo](/img/rc1/reboot2config.gif)
 
-# Bug Reporting
+## Bug Reporting
 
 Please report bugs in [#bug-reports](https://tkmm.org/discord) on Discord, or post a [new issue](https://github.com/TKMM-Team/Tkmm/issues/new) on GitHub.
 
