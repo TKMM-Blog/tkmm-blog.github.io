@@ -30,6 +30,4 @@ Download from the [official website](https://tkmm.org/downloads/) or use the in-
 
 Please report bugs in [#bug-reports](https://tkmm.org/discord) and tag posts with v2.0.0-beta
 
-||\@ Release Announcements ||
-
 **Full Changelog**: [v2.0.0-beta3...v2.0.0-beta4](https://github.com/TKMM-Team/Tkmm/compare/v2.0.0-beta3...v2.0.0-beta4)
