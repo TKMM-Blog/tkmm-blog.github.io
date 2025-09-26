@@ -5,7 +5,7 @@ Download from the [official website](https://tkmm.org/downloads/) or use the in-
 ### Important note to mod authors!
 **New icons were added to the game in 1.4.0**, so if a mod contains edits to any of the `__Combined.bntx` files inside the archives from `romfs/UI/LayoutArchive`, those edits will need to be redone using the BNTX files from the latest version. Doing so will ensure your mod's compatibility across all versions from 1.1.0 through 1.4.2.
 
-## Changes
+# Changes
 - Support added for TotK versions 1.4.0, 1.4.1 and 1.4.2
 - The `Install` button has been renamed to `Add Mod`
 - The `Merge` button has been renamed to `Apply` 
@@ -23,7 +23,7 @@ Download from the [official website](https://tkmm.org/downloads/) or use the in-
 
 (*) **Requires changelog rebuild!**
 
-## Fixes
+# Fixes
 - Resource table values now calculated correctly
 - App status updates correctly after merge failures
 - Fixed an issue with NAND paths incorrectly detected as invalid
@@ -32,7 +32,7 @@ Download from the [official website](https://tkmm.org/downloads/) or use the in-
 - Fixed errors related to broken json config files (corrupted files cannot be recovered, but they will be reset)
 - Fixed issues with moving mods to the top or bottom of the list
 
-## RomfsLite
+# RomfsLite
 Support was added for large mods on Switch firmware 20.0.0+ thanks to the RomfsLite feature from the TotK Optimizer (Ultracam) developped by MaxLastBreath.
 
 This feature bypasses the atmosphere romfs building process which runs out of memory with large mods since firmware 20.0.0.
@@ -47,15 +47,15 @@ If you use TKMM on PC, you need to enable the option in `Settings` > `Merging` a
 
 To use this feature on emulators, it is required that you change the merge output to this folder in the emulated SD card: `atmosphere\contents\0100f2c0115b6000`
 
-# TKMM-NX
+## TKMM-NX
 
-## Changes
+# Changes
 - Logs folder is changed to `tkmm/Logs` on the SD card
 - Initial setup now shows more information about what dumps are missing, if any
 - Fixed a TKMM-NX crash occuring when clicking certain UI elements (missing library dependency)
 - TKMM-NX is now capable of handling OS image self-updates. When updating, it will reboot the Switch completely rather than just close and reopen TKMM
 
-## New menu: Reboot2Config
+# New menu: Reboot2Config
 A new menu has been added which replaces the power options popup when pressing the Home button.
 
 The R2C menu allows you to directly reboot to your desired boot entry, without needing to go back to Hekate.
