@@ -5,9 +5,11 @@ Download from the [official website](https://tkmm.org/downloads/) or use the in-
 **Full GitHub history since last update**: [v2.0.0-beta3...v2.0.0-rc1](https://github.com/TKMM-Team/Tkmm/compare/v2.0.0-beta3...v2.0.0-rc1)
 
 ### Important note to mod authors
+---
 **New icons were added to the game in 1.4.0**. If one of your mods contains edits to any of the `__Combined.bntx` files inside the archives from `romfs/UI/LayoutArchive`, those edits will need to be redone using the BNTX files from the latest version. Doing so will ensure your mod's compatibility across all versions from 1.1.0 through 1.4.2.
 
 ### Important note to mod users
+---
 As was voted on Discord a few months prior, this update made many changes to the changelog formats, this means that all your mods will need to be reinstalled in the new version. For TKCL mods, you will need to wait until the authors have updated their mod with the new TKCL format.
 
 <p align="center">
@@ -15,6 +17,7 @@ As was voted on Discord a few months prior, this update made many changes to the
 </p>
 
 # Changes
+---
 - Support added for TotK versions 1.4.0, 1.4.1 and 1.4.2
 - The `Install` button has been renamed to `Add Mod`
 - The `Merge` button has been renamed to `Apply` 
@@ -31,6 +34,7 @@ As was voted on Discord a few months prior, this update made many changes to the
 - Added support for auto-setup with emulators using the .AppImage format on Linux (the file must match the emulator's name, like `Citron.AppImage` for example)
 
 # Fixes
+---
 - Resource table entries should now be properly estimated, issues that required using the external RESTBL calculator are now fixed
 - Fixed the app status not updating correctly after merge failures
 - Fixed an issue with NAND paths incorrectly detected as invalid
@@ -40,6 +44,7 @@ As was voted on Discord a few months prior, this update made many changes to the
 - Fixed issues with moving mods to the top and bottom of the list
 
 # Title Screen Indicator
+---
 This new addition is a mod dynamically built by TKMM when applying your current profile. It displays an indicator on the title screen so that you can directly telll whether or not your mods are properly installed.
 
 ![Default Mod](/img/rc1/defaultmod.png)
@@ -47,6 +52,7 @@ This new addition is a mod dynamically built by TKMM when applying your current 
 *This is added at the lowest priority, which means that if any of your mods edits the same text entry, that mod will overwrite it.*
 
 # RomfsLite
+---
 The issues due to lack of memory when launching TotK with mods (introduced since Switch firmware 20.0.0) are now a thing of the past! Thanks to the RomfsLite feature from the [TotK Optimizer](https://www.nxoptimizer.com) (Ultracam) developped by [MaxLastBreath](https://ko-fi.com/MaxLastBreath).
 
 This is accomplished by injecting code into the game which hooks into the functions that handle loading files. Basically, it tells the game to directly load RomFS files from a specific folder (`romfs` renamed to `romfslite`). On top of this, it also allows for hot-swapping mod files while the game is running, which can be extremely useful for mod developers (this requires reloading a save after swapping files).
@@ -60,15 +66,22 @@ We recommend using the version that is integrated to TKMM, which you can enable 
 - To use this feature on emulators, it is required that you change the merge output to this folder in the emulated SD card: `atmosphere\contents\0100f2c0115b6000`
 
 # Changes to the Setup Wizard
+---
 <p align="center">
     <video width="650" controls>
         <source src="https://blog.tkmm.org/img/rc1/wizard.mp4" type="video/mp4">
     </video>
 </p>
 
+The manual setup page was confusing in the previous version. The fields for all dump types were available, which caused many to believe they needed to fill every path. Now, during the setup process, the wizard only asks for each element step by step, and only for what it's missing (or what it wasn't able to detect automatically).
+
+For the manual emulator setup process, it is strongly recommended to launch the emulator, and enter its exact name in the setup window. This will allow TKMM to detect the location of the running emulator executable, and find all the information it needs based on that emulator's configuration.
+
 ## TKMM-NX
+---
 
 # Changes
+---
 - The Logs folder location has been changed to `tkmm/Logs` on the SD card
 - The WiFi settings page is now the first step of the setup wizard
 - Initial setup now provides more information about what dumps are missing, if any
@@ -80,15 +93,17 @@ We recommend using the version that is integrated to TKMM, which you can enable 
 - the volume for the sound card, in case the sound played when taking a screenshot is either too loud or too quiet
 
 # New menu: Reboot2Config
+---
 The [R2C menu](https://github.com/LordBubblesDev/R2CSharp) replaces the power options popup when pressing the Home button. It allows you to directly reboot to your desired boot entry, without needing to go back to Hekate.
 
 ![Reboot2Config Menu](/img/rc1/reboot2config.gif)
 
 ## Bug Reporting
-
+---
 Please report bugs in [#bug-reports](https://tkmm.org/discord) on Discord, or post a [new issue](https://github.com/TKMM-Team/Tkmm/issues/new) on GitHub.
 
 ## Contributors to this update
+---
 - [Arch Leaders](https://github.com/ArchLeaders)
 - [Lord Bubbles](https://github.com/LordBubblesDev) 
 - [MaxLastBreath](https://github.com/MaxLastBreath) (Ultracam / RomfsLite)
