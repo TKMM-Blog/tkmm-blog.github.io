@@ -14,7 +14,7 @@ As was voted on Discord a few months prior, this update made many changes to the
   <img src="https://blog.tkmm.org/img/rc1/discordvote.png" alt="Discord Vote" />
 </p>
 
-# Changes
+### Changes
 - Support added for TotK versions 1.4.0, 1.4.1 and 1.4.2
 - The `Install` button has been renamed to `Add Mod`
 - The `Merge` button has been renamed to `Apply` 
@@ -30,7 +30,7 @@ As was voted on Discord a few months prior, this update made many changes to the
 - In manual mode on the setup window, you can now simply input the name of the emulator - making sure it runs in the background will help with detecting all folder paths automatically
 - Added support for auto-setup with emulators using the .AppImage format on Linux (the file must match the emulator's name, like `Citron.AppImage` for example)
 
-# Fixes
+### Fixes
 - Resource table entries should now be properly estimated, issues that required using the external RESTBL calculator are now fixed
 - Fixed the app status not updating correctly after merge failures
 - Fixed an issue with NAND paths incorrectly detected as invalid
@@ -39,14 +39,14 @@ As was voted on Discord a few months prior, this update made many changes to the
 - Fixed errors due to broken json config files (corrupted files cannot be recovered but will be reset)
 - Fixed issues with moving mods to the top and bottom of the list
 
-# Title Screen Indicator
+### Title Screen Indicator
 This new addition is a mod dynamically built by TKMM when applying your current profile. It displays an indicator on the title screen so that you can directly telll whether or not your mods are properly installed.
 
 ![Default Mod](/img/rc1/defaultmod.png)
 
 *This is added at the lowest priority, which means that if any of your mods edits the same text entry, that mod will overwrite it.*
 
-# RomfsLite
+### RomfsLite
 The issues due to lack of memory when launching TotK with mods (introduced since Switch firmware 20.0.0) are now a thing of the past! Thanks to the RomfsLite feature from the [TotK Optimizer](https://www.nxoptimizer.com) (Ultracam) developped by [MaxLastBreath](https://ko-fi.com/MaxLastBreath).
 
 This is accomplished by injecting code into the game which hooks into the functions that handle loading files. Basically, it tells the game to directly load RomFS files from a specific folder (`romfs` renamed to `romfslite`). On top of this, it also allows for hot-swapping mod files while the game is running, which can be extremely useful for mod developers (this requires reloading a save after swapping files).
@@ -66,13 +66,13 @@ We recommend using the version that is integrated to TKMM, which you can enable 
     </video>
 </p>
 
-The manual setup page was confusing in the previous version. The fields for all dump types were available, which caused many to believe they needed to fill every path. Now, during the setup process, the wizard only asks for each element step by step, and only for what it's missing (or what it wasn't able to detect automatically).
+The manual setup page was confusing in the previous version. The fields for all dump types were available, which caused many to believe they needed to fill every path. Now, during the setup process, the wizard only asks for each element step by step, and it asks only for what it needs (or in better words, what it wasn't able to detect automatically).
 
 For the manual emulator setup process, it is strongly recommended to launch the emulator, and enter its exact name in the setup window. This will allow TKMM to detect the location of the running emulator executable, and find all the information it needs based on that emulator's configuration.
 
 ## TKMM-NX
 
-# Changes
+### Changes
 - The Logs folder location has been changed to `tkmm/Logs` on the SD card
 - The WiFi settings page is now the first step of the setup wizard
 - Initial setup now provides more information about what dumps are missing, if any
@@ -83,7 +83,7 @@ For the manual emulator setup process, it is strongly recommended to launch the 
 - the scale of the application, in case the text or UI elements are either too big or too small
 - the volume for the sound card, in case the sound played when taking a screenshot is either too loud or too quiet
 
-# New menu: Reboot2Config
+### New menu: Reboot2Config
 The [R2C menu](https://github.com/LordBubblesDev/R2CSharp) replaces the power options popup when pressing the Home button. It allows you to directly reboot to your desired boot entry, without needing to go back to Hekate.
 
 ![Reboot2Config Menu](/img/rc1/reboot2config.gif)
