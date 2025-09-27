@@ -84,5 +84,6 @@ Please report bugs in [#bug-reports](https://tkmm.org/discord) on Discord, or po
 ## Contributors to this update
 - [Arch Leaders](https://github.com/ArchLeaders)
 - [Lord Bubbles](https://github.com/LordBubblesDev) 
+- [MaxLastBreath](https://github.com/MaxLastBreath) (Ultracam / RomfsLite)
 - [Aster](https://github.com/AsteroidPizza39) (for gathering as many toasters as possible so we could warm the regards)
 - [carbonatedtea](https://github.com/k-carbonatedtea) (Simplified Chinese and Traditional Chinese translations)
