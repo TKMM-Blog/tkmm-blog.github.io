@@ -42,7 +42,7 @@ As was voted on Discord a few months prior, this update made many changes to the
 # RomfsLite
 The issues due to lack of memory when launching TotK with mods (introduced since Switch firmware 20.0.0) are now a thing of the past! Thanks to the RomfsLite feature from the [TotK Optimizer](https://www.nxoptimizer.com) (Ultracam) developped by [MaxLastBreath](https://ko-fi.com/MaxLastBreath).
 
-This is accomplished by injecting code that tells the game to directly load RomFS files from a specific folder (basically, `romfs` renamed to `romfslite`). On top of this, it also allows for hot-swapping mod files while the game is running, which can be extremely useful for mod developers (this requires reloading a save after swapping files).
+This is accomplished by injecting code into the game which hooks into the functions that handle loading files. Basically, it tells the game to directly load RomFS files from a specific folder (`romfs` renamed to `romfslite`). On top of this, it also allows for hot-swapping mod files while the game is running, which can be extremely useful for mod developers (this requires reloading a save after swapping files).
 
 We recommend using the version that is integrated to TKMM, which you can enable by going to the TotK Optimizer page (star icon on the navigation bar).
 
