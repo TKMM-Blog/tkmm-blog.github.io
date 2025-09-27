@@ -56,6 +56,12 @@ body {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   color: #e0e0e0 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+h2 {
+  margin-top: 2rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
 /* Links */
@@ -107,8 +113,8 @@ th {
 
 /* Horizontal rules */
 hr {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 0.5rem !important;
+  margin-bottom: 1.5rem !important;
   border-color: #404040 !important;
   background-color: #404040 !important;
 }
