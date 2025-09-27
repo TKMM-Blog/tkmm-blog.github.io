@@ -289,6 +289,34 @@ hr {
   font-weight: 600 !important;
 }
 
+/* Video responsiveness */
+video {
+  max-width: 100% !important;
+  height: auto !important;
+  width: 100% !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+/* Make videos wider on larger screens */
+@media (min-width: 768px) {
+  video {
+    max-width: 90% !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  video {
+    max-width: 80% !important;
+  }
+}
+
+/* Override Jekyll wrapper constraints for videos */
+.post-content video {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
 /* Pagination */
 .pagination {
   background-color: #2d2d2d !important;
