@@ -68,7 +68,9 @@ We recommend using the version that is integrated to TKMM, which you can enable 
     </video>
 </p>
 
-The manual setup page was confusing in the previous version. The fields for all dump types were available, which caused many to believe they needed to fill every path. Now, during the setup process, the wizard only asks for each element step by step, and it asks only for what it needs (or in better words, what it wasn't able to detect automatically).
+The manual setup page was confusing in the previous version. The fields for all dump types were available, which led many to believe it was necessary to fill every path.
+
+Now, during the setup process, the wizard only asks for each element, step by step, and it asks only for what it needs (or in better words, what it wasn't able to detect automatically).
 
 For the manual emulator setup process, it is strongly recommended to launch the emulator, and enter its exact name in the setup window. This will allow TKMM to detect the location of the running emulator executable, and find all the information it needs based on that emulator's configuration.
 
@@ -81,7 +83,7 @@ For the manual emulator setup process, it is strongly recommended to launch the 
 - Fixed a crash occuring when clicking certain UI elements (missing library dependency)
 - TKMM-NX is now capable of handling OS image self-updates - when updating, it will reboot the Switch completely rather than just close and reopen TKMM
 
-**A new config file was added at** `tkmm/config.ini` **which allows customization of a few things:**
+**A new config file was added at** `tkmm/config.ini` **which allows customizing a few things:**
 - the scale of the application, in case the text or UI elements are either too big or too small
 - the volume for the sound card, in case the sound played when taking a screenshot is either too loud or too quiet
 
