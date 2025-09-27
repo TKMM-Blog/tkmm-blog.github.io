@@ -2,6 +2,8 @@
 
 Download from the [official website](https://tkmm.org/downloads/) or use the in-app auto updater.
 
+**Full GitHub history since last update**: [v2.0.0-beta3...v2.0.0-rc1](https://github.com/TKMM-Team/Tkmm/compare/v2.0.0-beta3...v2.0.0-rc1)
+
 ### Important note to mod authors
 **New icons were added to the game in 1.4.0**. If one of your mods contains edits to any of the `__Combined.bntx` files inside the archives from `romfs/UI/LayoutArchive`, those edits will need to be redone using the BNTX files from the latest version. Doing so will ensure your mod's compatibility across all versions from 1.1.0 through 1.4.2.
 
@@ -78,8 +80,6 @@ The [R2C menu](https://github.com/LordBubblesDev/R2CSharp) replaces the power op
 ## Bug Reporting
 
 Please report bugs in [#bug-reports](https://tkmm.org/discord) on Discord, or post a [new issue](https://github.com/TKMM-Team/Tkmm/issues/new) on GitHub.
-
-**Full Changelog**: [v2.0.0-beta3...v2.0.0-rc1](https://github.com/TKMM-Team/Tkmm/compare/v2.0.0-beta3...v2.0.0-rc1)
 
 ## Contributors to this update
 - [Arch Leaders](https://github.com/ArchLeaders)
