@@ -62,7 +62,7 @@ We recommend using the version that is integrated to TKMM, which you can enable 
 # Changes to the Setup Wizard
 <p>
     <video width="650" controls>
-        <source src="../img/rc1/wizard.mp4" type="video/mp4">
+        <source src="https://blog.tkmm.org/img/rc1/wizard.mp4" type="video/mp4">
     </video>
 </p>
 
