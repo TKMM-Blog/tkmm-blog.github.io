@@ -3,7 +3,7 @@
 Download from the [official website](https://tkmm.org/downloads/) or use the in-app auto updater.
 
 ### Important note to mod authors
-**New icons were added to the game in 1.4.0**, so if a mod contains edits to any of the `__Combined.bntx` files inside the archives from `romfs/UI/LayoutArchive`, those edits will need to be redone using the BNTX files from the latest version. Doing so will ensure your mod's compatibility across all versions from 1.1.0 through 1.4.2.
+**New icons were added to the game in 1.4.0**. If one of your mods contains edits to any of the `__Combined.bntx` files inside the archives from `romfs/UI/LayoutArchive`, those edits will need to be redone using the BNTX files from the latest version. Doing so will ensure your mod's compatibility across all versions from 1.1.0 through 1.4.2.
 
 ### Important note to mod users
 As was voted on Discord a few months prior, this update made many changes to the changelog formats, this means that all your mods will need to be reinstalled in the new version. For TKCL mods, you will need to wait until the authors have updated their mod with the new TKCL format.
@@ -18,19 +18,19 @@ As was voted on Discord a few months prior, this update made many changes to the
 - The `Merge` button has been renamed to `Apply` 
 - Network and download errors are truncated to avoid log spam
 - Internet related errors now occur silently when connectivity is unavailable
-- The setup wizard was improved for clearer step by step guidance
-- TotK Optimizer "Enable" button is now replaced with an ON/OFF toggle
-- Sub-files in SARC archives are merged with other files that have the same canonical path
+- The "Enable" button on the TotK Optimizer page is now replaced with an ON/OFF toggle
 - RecipeArray now uses direct index merging
 - English is now used as the default language if the selected target language is not found in the mod
 - Simplified Chinese and Traditional Chinese translations have been added thanks to carbonatedtea
 - Added support for Brazilian Portuguese / USpt (only works with TotK 1.4.0 and higher)
+- Sub-files in SARC archives will now be merged with files that have the same canonical path in other archives
+- The setup wizard was improved for clearer step by step guidance
 - In manual mode on the setup window, you can now simply input the name of the emulator - making sure it runs in the background will help with detecting all folder paths automatically
 - Added support for auto-setup with emulators using the .AppImage format on Linux (the file must match the emulator's name, like `Citron.AppImage` for example)
 
 # Fixes
 - Resource table entries should now be properly estimated, issues that required using the external RESTBL calculator are now fixed
-- App status updates correctly after merge failures
+- Fixed the app status not updating correctly after merge failures
 - Fixed an issue with NAND paths incorrectly detected as invalid
 - Fixed split XCI files being misread as NSP
 - Fixed TotK Optimizer sliders resetting to 100 when reloading the page
@@ -38,9 +38,11 @@ As was voted on Discord a few months prior, this update made many changes to the
 - Fixed issues with moving mods to the top and bottom of the list
 
 # RomfsLite
-Support was added for large mods on Switch firmware 20.0.0+ thanks to the RomfsLite feature from the TotK Optimizer (Ultracam) developped by MaxLastBreath! This feature bypasses the atmosphere romfs building process which runs out of memory with large mods since firmware 20.0.0.
+The issues due to lack of memory when launching TotK with mods (introduced since Switch firmware 20.0.0) are now a thing of the past! Thanks to the RomfsLite feature from the [TotK Optimizer](https://www.nxoptimizer.com) (Ultracam) developped by [MaxLastBreath](https://ko-fi.com/MaxLastBreath).
 
 This is accomplished by injecting code that tells the game to directly load RomFS files from a specific folder (basically, `romfs` renamed to `romfslite`). On top of this, it also allows for hot-swapping mod files while the game is running, which can be extremely useful for mod developers (this requires reloading a save after swapping files).
+
+We recommend using the version that is integrated to TKMM, which you can enable by going to the TotK Optimizer page (star icon on the navigation bar).
 
 - If you use TKMM-NX, simply enabling the optimizer is enough, this feature will be enabled by default.
 
@@ -58,20 +60,18 @@ A new mod is dynamically built by TKMM and added to the merge output. It adds an
 ## TKMM-NX
 
 # Changes
-- Logs folder is changed to `tkmm/Logs` on the SD card
-- The WiFi settings page is now shown at the first step of the setup wizard
+- The Logs folder location has been changed to `tkmm/Logs` on the SD card
+- The WiFi settings page is now the first step of the setup wizard
 - Initial setup now provides more information about what dumps are missing, if any
 - Fixed a crash occuring when clicking certain UI elements (missing library dependency)
 - TKMM-NX is now capable of handling OS image self-updates - when updating, it will reboot the Switch completely rather than just close and reopen TKMM
 
-**A new config file was added at** `tkmm/config.ini` **which allows you to customize a few things:**
-- the scale of the application, if you thought the text/images were either too big or too small
-- the volume for the sound card, if sound played when taking a screenshot is either too loud or too quiet
+**A new config file was added at** `tkmm/config.ini` **which allows customization of a few things:**
+- the scale of the application, in case the text or UI elements are either too big or too small
+- the volume for the sound card, in case the sound played when taking a screenshot is either too loud or too quiet
 
 # New menu: Reboot2Config
-A new menu has been added which replaces the power options popup when pressing the Home button.
-
-The R2C menu allows you to directly reboot to your desired boot entry, without needing to go back to Hekate.
+The [R2C menu](https://github.com/LordBubblesDev/R2CSharp) replaces the power options popup when pressing the Home button. It allows you to directly reboot to your desired boot entry, without needing to go back to Hekate.
 
 ![Reboot2Config Menu](/img/rc1/reboot2config.gif)
 
