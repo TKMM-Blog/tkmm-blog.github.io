@@ -52,12 +52,12 @@ We recommend using the version that is integrated to TKMM, which you can enable 
 
 - To use this feature on emulators, it is required that you change the merge output to this folder in the emulated SD card: `atmosphere\contents\0100f2c0115b6000`
 
-# Default mod
-A new mod is dynamically built by TKMM and added to the merge output. It adds an indicator on the title screen so that you can directly know whether mods are properly installed.
+# Title Screen Indicator
+This new addition is a mod dynamically built by TKMM when applying your current profile. It displays an indicator on the title screen so that you can directly telll whether or not your mods are properly installed.
 
 ![Default Mod](/img/rc1/defaultmod.png)
 
-*This mod is added at the lowest priority, which means that if another mod edits the same text entry, that mod will overwrite it.*
+*This is added at the lowest priority, which means that if any of your mods edits the same text entry, that mod will overwrite it.*
 
 ## TKMM-NX
 
@@ -85,5 +85,5 @@ Please report bugs in [#bug-reports](https://tkmm.org/discord) on Discord, or po
 - [Arch Leaders](https://github.com/ArchLeaders)
 - [Lord Bubbles](https://github.com/LordBubblesDev) 
 - [MaxLastBreath](https://github.com/MaxLastBreath) (Ultracam / RomfsLite)
-- [Aster](https://github.com/AsteroidPizza39) (for gathering as many toasters as possible so we could warm the regards)
+- [Aster](https://github.com/AsteroidPizza39) (gathered as many toasters as possible so we could warm the regards)
 - [carbonatedtea](https://github.com/k-carbonatedtea) (Simplified Chinese and Traditional Chinese translations)
