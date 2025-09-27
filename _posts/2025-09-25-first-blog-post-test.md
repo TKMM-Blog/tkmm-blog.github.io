@@ -5,7 +5,7 @@ Download from the [official website](https://tkmm.org/downloads/) or use the in-
 **Full GitHub history since last update**: [v2.0.0-beta3...v2.0.0-rc1](https://github.com/TKMM-Team/Tkmm/compare/v2.0.0-beta3...v2.0.0-rc1)
 
 ### Important note to mod authors
-**New icons were added to the game in 1.4.0**. If one of your mods contains edits to any of the `__Combined.bntx` files inside the archives from `romfs/UI/LayoutArchive`, those edits will need to be redone using the BNTX files from the latest version. Doing so will ensure your mod's compatibility across all versions from 1.1.0 through 1.4.2.
+**New icons were added to the game in 1.4.0**. If one of your mods contains edits to any of the `__Combined.bntx` files inside the archives from `romfs/UI/LayoutArchive`, those edits will need to be redone using the BNTX files from the latest version. Doing so will help ensuring your mod's compatibility across all versions from 1.1.0 through 1.4.2.
 
 ### Important note to mod users
 As was voted on Discord a few months prior, this update made many changes to the changelog formats, this means that all your mods will need to be reinstalled in the new version. For TKCL mods, you will need to wait until the authors have updated their mod with the new TKCL format.
@@ -47,9 +47,11 @@ This new addition is a mod dynamically built by TKMM when applying your current 
 *This is added at the lowest priority, which means that if any of your mods edits the same text entry, that mod will overwrite it.*
 
 ### RomfsLite
-The issues due to lack of memory when launching TotK with mods (introduced since Switch firmware 20.0.0) are now a thing of the past! Thanks to the RomfsLite feature from the [TotK Optimizer](https://www.nxoptimizer.com) (Ultracam) developed by [MaxLastBreath](https://ko-fi.com/MaxLastBreath).
+The issues due to lack of memory when launching TotK with mods (introduced since the Switch firmware 20.0.0) are now a thing of the past! Thanks to the RomfsLite feature from the [TotK Optimizer](https://www.nxoptimizer.com) (Ultracam) developed by [MaxLastBreath](https://ko-fi.com/MaxLastBreath).
 
-This is accomplished by injecting code into the game which hooks into the functions that handle loading files. Basically, it tells the game to directly load RomFS files from a specific folder (`romfs` renamed to `romfslite`). On top of this, it also allows for hot-swapping mod files while the game is running, which can be extremely useful for mod developers (this requires reloading a save after swapping files).
+This is accomplished by injecting code into the game and modifying the functions that handle loading files. Basically, it tells the game to directly load RomFS files from a specific folder (`romfs` renamed to `romfslite`).
+
+On top of this, it also allows hot-swapping mod files while the game is running, which can be extremely useful for mod developers (this requires reloading a save after swapping files).
 
 We recommend using the version that is integrated to TKMM, which you can enable by going to the TotK Optimizer page (star icon on the navigation bar).
 
