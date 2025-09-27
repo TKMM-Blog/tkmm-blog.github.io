@@ -39,6 +39,13 @@ As was voted on Discord a few months prior, this update made many changes to the
 - Fixed errors due to broken json config files (corrupted files cannot be recovered but will be reset)
 - Fixed issues with moving mods to the top and bottom of the list
 
+# Title Screen Indicator
+This new addition is a mod dynamically built by TKMM when applying your current profile. It displays an indicator on the title screen so that you can directly telll whether or not your mods are properly installed.
+
+![Default Mod](/img/rc1/defaultmod.png)
+
+*This is added at the lowest priority, which means that if any of your mods edits the same text entry, that mod will overwrite it.*
+
 # RomfsLite
 The issues due to lack of memory when launching TotK with mods (introduced since Switch firmware 20.0.0) are now a thing of the past! Thanks to the RomfsLite feature from the [TotK Optimizer](https://www.nxoptimizer.com) (Ultracam) developped by [MaxLastBreath](https://ko-fi.com/MaxLastBreath).
 
@@ -52,12 +59,12 @@ We recommend using the version that is integrated to TKMM, which you can enable 
 
 - To use this feature on emulators, it is required that you change the merge output to this folder in the emulated SD card: `atmosphere\contents\0100f2c0115b6000`
 
-# Title Screen Indicator
-This new addition is a mod dynamically built by TKMM when applying your current profile. It displays an indicator on the title screen so that you can directly telll whether or not your mods are properly installed.
-
-![Default Mod](/img/rc1/defaultmod.png)
-
-*This is added at the lowest priority, which means that if any of your mods edits the same text entry, that mod will overwrite it.*
+# Changes to the Setup Wizard
+<p>
+    <video width="650" controls>
+        <source src="../img/rc1/wizard.mp4" type="video/mp4">
+    </video>
+</p>
 
 ## TKMM-NX
 
