@@ -80,3 +80,8 @@ The [R2C menu](https://github.com/LordBubblesDev/R2CSharp) replaces the power op
 Please report bugs in [#bug-reports](https://tkmm.org/discord) on Discord, or post a [new issue](https://github.com/TKMM-Team/Tkmm/issues/new) on GitHub.
 
 **Full Changelog**: [v2.0.0-beta3...v2.0.0-rc1](https://github.com/TKMM-Team/Tkmm/compare/v2.0.0-beta3...v2.0.0-rc1)
+
+## Contributors to this update
+- [Arch Leaders](https://github.com/ArchLeaders)
+- [Lord Bubbles](https://github.com/LordBubblesDev) 
+- [Aster](https://github.com/AsteroidPizza39) (for gathering as many toasters as possible so we could warm the regards)
