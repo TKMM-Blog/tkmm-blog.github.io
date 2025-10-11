@@ -114,17 +114,34 @@ blockquote {
 
 /* Tables */
 table {
-  background-color: #2d2d2d !important;
+  background-color: #1a1a1a !important;
   border: 1px solid #404040 !important;
+  border-collapse: collapse !important;
 }
 
 th, td {
   border: 1px solid #404040 !important;
   color: #e0e0e0 !important;
+  padding: 0.75rem !important;
 }
 
 th {
+  background-color: #2d2d2d !important;
+  font-weight: 600 !important;
+}
+
+/* Alternating row colors - dark charcoal and dark grey */
+tbody tr:nth-child(odd) {
   background-color: #1a1a1a !important;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #2d2d2d !important;
+}
+
+/* Hover effect for table rows */
+tbody tr:hover {
+  background-color: #333333 !important;
 }
 
 /* Horizontal rules */
