@@ -1,1 +1,9 @@
 ﻿_site
+*.conf
+*.bat
+*.sh
+*.lock
+*.pem
+*.preview.yml
+Gemfile
+vendor/bundle

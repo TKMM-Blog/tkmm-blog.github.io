@@ -80,6 +80,56 @@ h2::after {
   background-color: #404040 !important;
 }
 
+/* Spacing between bullet list items */
+.post-content li {
+  margin-bottom: 0.6em;
+}
+
+.post-content li:last-child {
+  margin-bottom: 0;
+}
+
+.post-content li > ul {
+  margin-top: 0.6em;
+}
+
+/* Opt out: add {: .compact-list} on the line after a markdown list */
+.post-content ul.compact-list > li {
+  margin-bottom: 0;
+}
+
+.post-content ul.compact-list > li > ul {
+  margin-top: 0;
+}
+
+/* Controlled gap between bullet list items */
+.post-content ul + .list-gap {
+  height: 0.75em;
+  margin: -0.5em 0 0;
+  padding: 0;
+}
+
+.post-content .list-gap + ul {
+  margin-top: 0;
+}
+
+/* Heading section links (#) */
+.post-content .header-link {
+  margin-left: 0.35em;
+  font-weight: 400;
+  text-decoration: none !important;
+  opacity: 0.35;
+  transition: opacity 0.15s ease;
+}
+
+.post-content h1:hover .header-link,
+.post-content h2:hover .header-link,
+.post-content h3:hover .header-link,
+.post-content .header-link:hover,
+.post-content .header-link:focus {
+  opacity: 1;
+}
+
 /* Links */
 a {
   color: #4a9eff !important;

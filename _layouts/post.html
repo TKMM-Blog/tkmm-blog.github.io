@@ -18,7 +18,7 @@ layout: default
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
+    {% include anchor_headings.html html=content anchorBody="#" anchorClass="header-link" anchorTitle="Link to this section" h_min=1 h_max=3 %}
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>

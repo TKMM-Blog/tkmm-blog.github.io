@@ -1,6 +1,12 @@
 title: "TKMM Blog"
 author: "TKMM-Team"
+url: "https://blog.tkmm.org"
+baseurl: ""
 description: "This website is used to share information about the TKMM project (progress reports, updates, etc.)." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+
+# Larger Discord / Twitter link previews when a post sets `image`
+twitter:
+  card: summary_large_image
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
@@ -29,6 +35,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 titles_from_headings:
   strip_title: true
@@ -37,6 +44,6 @@ titles_from_headings:
 defaults:
   - scope:
       path: ""
-      type: post
+      type: posts
     values:
       tags: Other
